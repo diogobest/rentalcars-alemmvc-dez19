@@ -10,13 +10,20 @@ class RentalPresenter < SimpleDelegator
       # if rental.scheduled?
       if scheduled?
         helper.content_tag :span, class: 'badge badge-primary' do
-          helper.t(rental.status)
+          'agendada'
         end
       elsif finalized?
         helper.content_tag :span, class: 'badge badge-success' do
-          helper.t(rental.status)
+          'finalizada'
         end
-
+      elsif in_review?
+        helper.content_tag :span, class: 'badge badge-warning' do
+          'agendada'
+        end
+      else ongoing?
+        helper.content_tag :span, class: 'badge badge-info' do
+          'agendada'
+        end
       end
     end
     private

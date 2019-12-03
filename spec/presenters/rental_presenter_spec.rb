@@ -6,7 +6,7 @@ describe RentalPresenter do
       rental = build(:rental, status: :scheduled)
 
       result = RentalPresenter.new(rental).status
-      
+
       expect(result).to eq('<span class="badge badge-primary">agendada</span>')
     end
   end

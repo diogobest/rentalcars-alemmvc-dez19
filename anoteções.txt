@@ -1,0 +1,25 @@
+Solid - single responsability principle
+        - Cada classe deve ter um unico proposito
+
+DDD
+pattern repository - 
+
+
+principio de substituição de liskov -
+interface segregation principle - n aplica no ruby
+
+dependency injection principle -    
+
+Helper: ao criar um helper, ele está disponíviel em todos as views. 
+
+
+PRESENTER:
+
+- é possível restringir quais os metodos que o objeto terá em determinada view.
+-  é ligado diretamente com a view
+- não é um pattern (oficial)
+- utilizado quando não vai ser necessário chamar em logs / consoles.
+
+Decorator:
+
+- 
